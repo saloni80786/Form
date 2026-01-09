@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <form id="regForm">
+        <h1>University Admission</h1>
+        
+        <div class="steps-wrapper">
+            <span class="step">1</span>
+            <span class="step">2</span>
+            <span class="step">3</span>
+        </div>
+
+        <div class="tab">
+            <h3>Personal Information</h3>
+            <input type="text" placeholder="Full Name" name="fname">
+            <input type="email" placeholder="Email Address" name="email">
+            <input type="tel" placeholder="Phone Number" name="phone">
+        </div>
+
+        <div class="tab">
+            <h3>Academic Background</h3>
+            <input type="text" placeholder="High School Name" name="school">
+            <input type="number" placeholder="GPA / Percentage" name="gpa">
+            <select name="program">
+                <option value="">Select Desired Program</option>
+                <option value="cs">Computer Science</option>
+                <option value="eng">Engineering</option>
+                <option value="biz">Business Administration</option>
+            </select>
+        </div>
+
+        <div class="tab">
+            <h3>Account Security</h3>
+            <input type="password" placeholder="Create Password" name="pword">
+            <input type="password" placeholder="Confirm Password" name="cpword">
+        </div>
+
+        <div class="btn-group">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
